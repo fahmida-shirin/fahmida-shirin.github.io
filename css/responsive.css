@@ -149,7 +149,7 @@ nav{
     padding: 25px;
 }
  .contact-para{
-    max-width: 90%;
+    max-width: 110%;
     margin: auto;
    }
    .contact-content{
@@ -205,7 +205,7 @@ nav{
         min-width: 180px;
     }
     .contact-content{
-    padding: 127px 50px;
+    padding: 100px 30px;
    }
    .hero-content h1{
     margin-top: ;
@@ -225,6 +225,25 @@ nav{
    
    .marquee{
     margin-top: 200px;
+   }
+   .contact-content h1{
+    font-size:50px;
+   }
+   .works-title{
+    font-size: 55px;
+   }
+   .skills-title{
+    font-size: 55px;
+   }
+   .service-title{
+    font-size: 55px;
+   }
+   .about-content h1{
+    font-size: 55px;
+   }
+   .contact-para{
+    max-width: 90%;
+    margin: auto;
    }
 
 }
