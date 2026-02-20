@@ -89,7 +89,7 @@
     display:flex ;
     z-index: 3;
    }
-   nav {
+   .header-nav {
       display: flex;
    }
    .mobile-menu span{
@@ -141,7 +141,7 @@
 .menu{
    display: flex;
 }
-nav{
+.header-nav{
     display: none;
     
 }
@@ -157,6 +157,18 @@ nav{
    }
    #hero{
     margin-top: 50px;
+   }
+   .footer-nav{
+    flex-direction: column;
+    text-align: center;
+   }
+   .footer{
+   text-align: center;
+   flex-direction: column;
+   }
+   .footer-social{
+    justify-content: center;
+    flex-direction: ;
    }
 
 }
