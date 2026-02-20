@@ -512,6 +512,21 @@ h3 .category{
 
 }
 
+.slide{
+    font-size: 20px;
+    padding-right: 5px;
+    position: relative;
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+    
+    
+}
+.slide img{
+   width: px;
+    
+}
+
 #contact {
     margin-top: 130px;
 }

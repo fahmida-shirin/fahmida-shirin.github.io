@@ -322,12 +322,19 @@
     <section id="works">
         <div class="container">
             <h1 class="works-title">My <span class="prple-txt">Latest Works</span></h1>
-            <div class="row">
-                <div class="col-md-6">
-                    <div class="work1">
-                        <img src="/race.mockup.webp" alt="" width="100%">
-                    </div>
+            <div class="your-class">
+                <div class="slide">
+                    <img src="race.png" alt="" width="100%">
                 </div>
+                <div class="slide">
+                    <img src="ecommerce.png" alt=""100% >
+                </div>
+                 <div class="slide">
+                    <img src="race.png" alt="">
+                </div>
+
+                
+
             </div>
         </div>
 
@@ -550,6 +557,76 @@
             });
         })
     </script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('.your-class').slick({
+                centermode: true,
+                // centerpadding: '60px',
+                slidesToShow: 4,
+                speed: 2000,
+                autoplaySpeed: 1000,
+                prevArrow: '<button type="button" class="slick-prev"> <i class="fa-solid fa-chevron-left arrow"></i> </button>',
+                nextArrow: '<button type="button" class="slick-next"> <i class="fa-solid fa-chevron-right arrow"></i> </button>',
+                responsive: [
+                    {
+                        breakpoint: 1024, // Screen size up to 1024px
+                        settings: {
+                            slidesToShow: 3,
+                            slidesToScroll: 2,
+                            infinite: true,
+                            dots: false,
+                        }
+                    },
+                    {
+                        breakpoint: 992, // Screen size up to 1024px
+                        settings: {
+                            slidesToShow: 2,
+                            slidesToScroll: 2,
+                            infinite: true,
+                            dots: false,
+                        }
+                    },
+                    {
+                        breakpoint: 600, // Screen size up to 600px
+                        settings: {
+                            slidesToShow: 1,
+                            slidesToScroll: 1,
+                            arrows: true// Hide arrows on small screens
+                        }
+                    },
+                    {
+                        breakpoint: 480, // Screen size up to 480px
+                        settings: {
+                            slidesToShow: 1,
+                            slidesToScroll: 1,
+                            dots: false, // Hide dots on very small screens
+                            autoplay: false // Disable autoplay on very small screens
+                        }
+                    }
+                ]
+
+
+            });
+
+        });
+
+
+
+
+
+    </script>
+    <script>
+        $(document).ready(function () {
+            $(".mobile-menu").click(function () {
+                $(".mobile-menu").toggleClass("clicked");
+
+            });
+            $(".mobile-menu").click(function () {
+                $(".nav2-mobile").toggleClass("menu");
+            });
+        })
+    </script>
+
 
 
 </body>
