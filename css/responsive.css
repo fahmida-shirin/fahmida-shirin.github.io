@@ -211,6 +211,25 @@
    .hero-content h1{
     font-size: 30px;
    }
+   .works-title{
+    font-size: 50px;
+   }
+   .skills-title{
+    font-size: 50px;
+   }
+   .service-title{
+    font-size: 50px;
+   }
+   .about-content h1{
+    font-size: 50px;
+   }
+    .contact-content h1{
+    font-size:50px;
+   }
+   .hero-content p, .about-content p, .service-card p,.skills-discrp, .contact-para{
+    font-size:16px ;
+   }
+
 }
 @media screen and (max-width:375px) {
     .about-img img{
