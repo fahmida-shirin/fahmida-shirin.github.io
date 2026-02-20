@@ -526,6 +526,31 @@ h3 .category{
    width: px;
     
 }
+.your-class .slick-prev{
+    position: absolute;
+    left: -11px;
+    top: 45%;
+    z-index: 1;
+    border: none;
+    border-radius: 10px;
+    background: rgba(0, 0, 0, 0.641);
+    backdrop-filter: blur(10px);
+    padding: 10px 10px;
+
+}
+.your-class .slick-next{
+    position: absolute;
+    right: -11px;
+    top: 45%;
+    z-index: 1;
+    border: none;
+    border-radius: 10px;
+    background: rgba(0, 0, 0, 0.641);
+    backdrop-filter: blur(10px);
+    padding: 10px 10px;
+
+
+}
 
 #contact {
     margin-top: 130px;
