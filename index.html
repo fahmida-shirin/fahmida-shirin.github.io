@@ -89,7 +89,7 @@
                     </div>
                     <div class="col-md-6">
                         <div class="profile">
-                            <img src="/my.profile.png" alt="">
+                            <img src="/prof.png" alt="">
 
                         </div>
 
@@ -169,7 +169,7 @@
                 <div class="education">
                     <div class="row g-3">
                         <div class="col-md-6">
-                            <div class="uiux" data-aos="zoom-in-right">
+                            <div class="uiux" data-aos="zoom-in-right" data-aos-duration="800">
                                 <img src="/uiux.png" alt="" width="50" height="50">
                                 <p> <span class="prple-txt">Advanced diploma in UI/UX designing </span>- Skilz the
                                     learning
@@ -178,7 +178,7 @@
                             </div>
                         </div>
                         <div class="col-md-6">
-                            <div class="graduation" data-aos="fade-left">
+                            <div class="graduation" data-aos="fade-left" data-aos-duration="800">
                                 <img src="/degree.png" alt="" width="50" height="50">
                                 <p> <span class="prple-txt">Bachelor of arts in sociology </span>- calicut university
                                     (2021-2024)
@@ -253,6 +253,8 @@
     </section>
 
 
+
+
     <section id="skills">
         <div class="container">
             <h1 class="skills-title"><span class="prple-txt">Areas</span> of <span class="prple-txt">Expertise</span>
@@ -262,7 +264,7 @@
                 perfomance across web and mobile platforms . </p>
             <div class="row g-3">
                 <div class="col-6 col-sm-6 col-md-4 col-lg-2 ">
-                    <div class="tool-card">
+                    <div class="tool-card" data-aos="zoom-in-down" data-aos-duration="1200">
                         <img class="tool-img" src="/Figma.png" alt="" width="60" height="60">
                         <p>FIGMA</p>
 
@@ -270,7 +272,7 @@
 
                 </div>
                 <div class="col-6 col-sm-6 col-md-4 col-lg-2">
-                    <div class="tool-card">
+                    <div class="tool-card" data-aos="zoom-in-down" data-aos-duration="1200">
                         <img class="tool-img" src="/Html.png" alt="" width="60" height="60">
                         <p>HTML</p>
 
@@ -278,7 +280,7 @@
 
                 </div>
                 <div class="col-6 col-sm-6 col-md-4 col-lg-2">
-                    <div class="tool-card">
+                    <div class="tool-card" data-aos="zoom-in-down" data-aos-duration="1200">
                         <img class="tool-img" src="/css.png" alt="" width="60" height="60">
                         <p>CSS</p>
 
@@ -286,7 +288,7 @@
 
                 </div>
                 <div class="col-6 col-sm-6 col-md-4 col-lg-2">
-                    <div class="tool-card">
+                    <div class="tool-card" data-aos="zoom-in-down" data-aos-duration="1200">
                         <img class="tool-img" src="/Js.png" alt="" width="60" height="60">
                         <p>Java Script</p>
 
@@ -294,7 +296,7 @@
 
                 </div>
                 <div class="col-6 col-sm-6 col-md-4 col-lg-2">
-                    <div class="tool-card">
+                    <div class="tool-card" data-aos="zoom-in-down" data-aos-duration="1200">
                         <div class="bootstrap">
                             <img class="tool-img" src="/bootstrap.png" alt="" width="70" height="60">
                         </div>
@@ -304,7 +306,7 @@
 
                 </div>
                 <div class="col-6 col-sm-6 col-md-4 col-lg-2">
-                    <div class="tool-card">
+                    <div class="tool-card" data-aos="zoom-in-down" data-aos-duration="1200">
                         <img class="tool-img" src="/affinity.png" alt="" width="60" height="60">
                         <p>Affinity</p>
 
@@ -319,26 +321,80 @@
     </section>
 
 
+
+
     <section id="works">
         <div class="container">
             <h1 class="works-title">My <span class="prple-txt">Latest Works</span></h1>
-            <div class="your-class">
-                <div class="slide">
-                    <img src="race.png" alt="" width="100%">
-                </div>
-                <div class="slide">
-                    <img src="ecommerce.png" alt="" width="100%" >
-                </div>
-                 <div class="slide">
-                    <img src="race.png" alt="" width="100%">
-                </div>
 
-                
+
+            <!-- FILTER TABS -->
+            <div class="work-tabs">
+                <button class="tab-btn active" onclick="filterWork('all', this)">All</button>
+                <button class="tab-btn" onclick="filterWork('website', this)">Websites</button>
+                <button class="tab-btn" onclick="filterWork('uiux',this)">UIUX Designs</button>
 
             </div>
+
+
+            <!-- ================= WEBSITES ================= -->
+            <div class="work-container web">
+
+                <div class="work-card" data-category="website">
+                    <img src="race.png" width="100%" height="100%">
+                    <div class="work-overlay">
+                        <a href="#" target="_blank">Live Demo</a>
+                    </div>
+                </div>
+
+                <div class="work-card" data-category="website">
+                    <img src="reen.png" width="100%" height="100%">
+                    <div class="work-overlay">
+                        <a href="#" target="_blank">Live Demo</a>
+                    </div>
+                </div>
+
+            </div>
+            <div class="your-class">
+
+                <!-- Work 1 -->
+                <div class="work-crad slide-card" data-category="uiux">
+                    <img src="token-app.png" alt="">
+
+                </div>
+
+                <!-- Work 2 -->
+                <div class="work-crad slide-card"data-category="uiux">
+                    <img src="primoo.png" alt="">
+                </div>
+
+                <!-- Work 3 -->
+                <div class="work-crad slide-card"data-category="uiux">
+                    <img src="donzo.png" alt="">
+
+                </div>
+
+                <!-- Work 4 -->
+                <div class="work-crad slide-card"data-category="uiux">
+                    <img src="phone-scrn.png" alt="">
+                </div>
+
+                <div class="work-crad slide-card"data-category="uiux">
+                    <img src="scappa.png" alt="">
+                </div>
+
+                <div class="work-crad slide-card"data-category="uiux">
+                    <img src="mondly.png" alt="">
+                </div>
+            </div>
+
         </div>
 
+
     </section>
+
+
+
 
 
     <section id="contact">
@@ -346,7 +402,8 @@
             <div class="contact-content">
                 <h4>Contact Me</h4>
                 <h1><span class="prple-txt">Let's Work</span> Together</h1>
-                <p class="contact-para">I’m always open to new projects ,collaborations, and creative ideas. if you have
+                <p class="contact-para">I’m always open to new projects ,collaborations, and creative ideas. if you
+                    have
                     something in mind. i’d
                     love to hear from you. </p>
                 <div class="row g-4">
@@ -465,13 +522,13 @@
 
     <div class="call">
         <a href="tel:+918590854711" target="_blank">
-            <i class="fa-solid fa-phone icon-phone "></i>
+            <i class="fa-solid fa-square-phone"></i>
         </a>
 
     </div>
     <div class="whatsapp">
         <a href="https://wa.me/" target="_blank">
-            <i class="fa-brands fa-whatsapp icon-whatsapp"></i>
+            <i class="fa-brands fa-square-whatsapp"></i>
         </a>
     </div>
 
@@ -485,7 +542,8 @@
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
         AOS.init({
-
+            duration: 800,
+            once: true
         });
     </script>
 
@@ -498,6 +556,8 @@
                 slidesToShow: 4,
                 speed: 2000,
                 autoplaySpeed: 1000,
+                prevArrow: '<button type="button" class="slick-prev"> <i class="fa-solid fa-chevron-left arrow"></i> </button>',
+                nextArrow: '<button type="button" class="slick-next"> <i class="fa-solid fa-chevron-right arrow"></i> </button>',
                 responsive: [
                     {
                         breakpoint: 1024, // Screen size up to 1024px
@@ -615,7 +675,54 @@
 
 
     </script>
-  
+    <script>
+
+function filterWork(category) {
+
+  const cards = document.querySelectorAll('.slide-card');
+
+  cards.forEach(card => {
+
+    if (category === "all") {
+      card.style.display = "block";
+    }
+    else if (card.dataset.category === category) {
+      card.style.display = "block";
+    }
+    else {
+      card.style.display = "none";
+    }
+
+  });
+
+}
+
+</script>
+<script>
+
+function filterWork(category, clickedBtn) {
+
+  /* FILTER PROJECTS */
+  const cards = document.querySelectorAll('.work-card');
+
+  cards.forEach(card => {
+    if (category === "all" || card.dataset.category === category) {
+      card.style.display = "block";
+    } else {
+      card.style.display = "none";
+    }
+  });
+
+  /* ACTIVE BUTTON COLOR */
+  const buttons = document.querySelectorAll('.tab-btn');
+  buttons.forEach(btn => btn.classList.remove('active'));
+
+  clickedBtn.classList.add('active');
+}
+
+</script>
+
+
 
 
 </body>

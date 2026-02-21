@@ -28,7 +28,7 @@
     padding: 127px 60px;
    }
    .skills-discrp{
-    max-width: 80%;
+    max-width: 90%;
    }
 
    
@@ -44,9 +44,11 @@
    
 }
 @media screen and (max-width:991px) {
-   
-   .about-img {
-    width:80%;
+   #hero{
+    margin-top: 0px;
+   }
+   .about-img img {
+    width:70%;
    }
    .about-content{
     padding-right: ;
@@ -57,7 +59,7 @@
 
    .content h1{
      width: 400;
-     font-size: 45px;
+     font-size: 33px;
    }
    .service-title{
     font-size: 65px;
@@ -67,7 +69,7 @@
 
    }
    .skills-discrp{
-    max-width: 80%;
+    max-width: 100%;
     margin: auto;
    }
    .contact-content h1{
@@ -126,15 +128,13 @@
     .profile{
         text-align: center;
     }
-    .mobile-menu span{
+   .mobile-menu span{
    display: flex;
    padding-left:0;
    margin-bottom: 0;
    list-style: none;
-   
-
-
 }
+
 .mobile-menu{
     display: flex;
 }
@@ -151,12 +151,13 @@
  .contact-para{
     max-width: 110%;
     margin: auto;
+    margin-bottom: 60px;
    }
    .contact-content{
     padding: 127px 60px;
    }
    #hero{
-    margin-top: 50px;
+    margin-top: 80px;
    }
    .footer-nav{
     flex-direction: column;
@@ -170,12 +171,26 @@
     justify-content: center;
     flex-direction: ;
    }
+   .content h1{
+    font-size: 41px;
+   }
+   .marquee{
+    margin-top: 50px;
+   }
+   .about-img img{
+       width: 120%;
+   }
+   .skills-discrp{
+    max-width: 112%;
+    margin: auto;
+   }
 
 }
 
 @media screen and (max-width:575px) {
    .about-img img{
-    width: 100%;
+    width: 120%;
+    padding-right: 50px;
    }
    .contact-content{
     padding: 127px 60px;
@@ -187,14 +202,22 @@
     padding:20px;
    }
    #hero{
-    margin-top: 100px;
+    margin-top: 60px;
+   }
+   .content h1{
+    font-size: 38px;
+   }
+   .skills-discrp{
+    max-width:97% ;
+    margin: auto;
    }
 
 }
 @media screen and (max-width:425px) {
-    .about-img img{
-        width: 90%;
+    .content h1{
+        font-size: 39px;
     }
+    
     .contact-form{
     padding: 25px;
     min-width: 230px;
@@ -206,7 +229,7 @@
     padding:35px 38px;
    }
    #hero{
-    margin-top: 30px;
+    margin-top: 80px;
    }
    .hero-content h1{
     font-size: 33px;
@@ -229,11 +252,20 @@
    .hero-content p, .about-content p, .service-card p,.skills-discrp, .contact-para{
     font-size:16px ;
    }
+   .about-img img{
+       width: 120%;
+       padding-right: 45px;
+   }
+   .skills-discrp{
+    max-width:90% ;
+    margin: auto;
+   }
 
 }
 @media screen and (max-width:375px) {
     .about-img img{
-        width: 90%;
+        width: 120%;
+        padding-right: 45px;
     }
     .contact-form{
         min-width: 180px;
@@ -242,7 +274,8 @@
     padding: 100px 30px;
    }
    .hero-content h1{
-    font-size: 30px;
+    font-size:26px;
+    margin-top: ;
    }
    .marquee{
     margin-top: 140px;
@@ -250,15 +283,8 @@
    .about-content{
     padding:38px 41px;
    }
-   .about-img{
-    width: 100%;
-   }
-   #hero{
-    margin-top:170px;
-   }
-   
    .marquee{
-    margin-top: 200px;
+    margin-top: 50px;
    }
    .contact-content h1{
     font-size:50px;
@@ -277,6 +303,14 @@
    }
    .contact-para{
     max-width: 90%;
+    margin: auto;
+    margin-bottom:60px;
+   }
+   #hero{
+    margin-top: 80px;
+   }
+   .skills-discrp{
+    max-width:97% ;
     margin: auto;
    }
 
