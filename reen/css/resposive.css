@@ -1,0 +1,52 @@
+@media screen and (max-width: 1199px){
+ 
+   
+}
+@media screen and (max-width: 1024px){
+
+}
+@media screen and (max-width: 991px){
+    .card{
+        flex-direction: column;
+    }
+
+}
+@media screen and (max-width: 768px){
+    .sub-heading{
+        word-break: break-all;
+    }
+    footer .nav{
+        margin-left: 0px;
+    }
+     .heading{
+        font-size: 30px;
+    }
+      .footer .image{
+        width: ;
+      }
+}
+@media screen and (max-width: 575px){
+  footer .nav{
+    margin-left: 0px;
+  }
+  .heading{
+    font-size: 30px;
+  }
+}
+@media screen and (max-width: 525px){
+
+}
+@media screen and (max-width: 425px){
+    .form{
+        width:300px;
+    }
+}
+@media screen and (max-width: 375px){
+  .heading{
+    word-break: break-all;
+  }
+  .form{
+    width:200px;
+  }
+}
+
