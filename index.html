@@ -89,7 +89,7 @@
                     </div>
                     <div class="col-md-6">
                         <div class="profile">
-                            <img src="/prof.png" alt="">
+                            <img src="/prof.webp" alt="Fahmida Shirin Portfolio" loading="lazy" width="400" height="400">
 
                         </div>
 
@@ -364,26 +364,26 @@
                 </div>
 
                 <!-- Work 2 -->
-                <div class="work-crad slide-card"data-category="uiux">
+                <div class="work-crad slide-card" data-category="uiux">
                     <img src="primoo.png" alt="">
                 </div>
 
                 <!-- Work 3 -->
-                <div class="work-crad slide-card"data-category="uiux">
+                <div class="work-crad slide-card" data-category="uiux">
                     <img src="donzo.png" alt="">
 
                 </div>
 
                 <!-- Work 4 -->
-                <div class="work-crad slide-card"data-category="uiux">
+                <div class="work-crad slide-card" data-category="uiux">
                     <img src="phone-scrn.png" alt="">
                 </div>
 
-                <div class="work-crad slide-card"data-category="uiux">
+                <div class="work-crad slide-card" data-category="uiux">
                     <img src="scappa.png" alt="">
                 </div>
 
-                <div class="work-crad slide-card"data-category="uiux">
+                <div class="work-crad slide-card" data-category="uiux">
                     <img src="mondly.png" alt="">
                 </div>
             </div>
@@ -677,50 +677,50 @@
     </script>
     <script>
 
-function filterWork(category) {
+        function filterWork(category) {
 
-  const cards = document.querySelectorAll('.slide-card');
+            const cards = document.querySelectorAll('.slide-card');
 
-  cards.forEach(card => {
+            cards.forEach(card => {
 
-    if (category === "all") {
-      card.style.display = "block";
-    }
-    else if (card.dataset.category === category) {
-      card.style.display = "block";
-    }
-    else {
-      card.style.display = "none";
-    }
+                if (category === "all") {
+                    card.style.display = "block";
+                }
+                else if (card.dataset.category === category) {
+                    card.style.display = "block";
+                }
+                else {
+                    card.style.display = "none";
+                }
 
-  });
+            });
 
-}
+        }
 
-</script>
-<script>
+    </script>
+    <script>
 
-function filterWork(category, clickedBtn) {
+        function filterWork(category, clickedBtn) {
 
-  /* FILTER PROJECTS */
-  const cards = document.querySelectorAll('.work-card');
+            /* FILTER PROJECTS */
+            const cards = document.querySelectorAll('.work-card');
 
-  cards.forEach(card => {
-    if (category === "all" || card.dataset.category === category) {
-      card.style.display = "block";
-    } else {
-      card.style.display = "none";
-    }
-  });
+            cards.forEach(card => {
+                if (category === "all" || card.dataset.category === category) {
+                    card.style.display = "block";
+                } else {
+                    card.style.display = "none";
+                }
+            });
 
-  /* ACTIVE BUTTON COLOR */
-  const buttons = document.querySelectorAll('.tab-btn');
-  buttons.forEach(btn => btn.classList.remove('active'));
+            /* ACTIVE BUTTON COLOR */
+            const buttons = document.querySelectorAll('.tab-btn');
+            buttons.forEach(btn => btn.classList.remove('active'));
 
-  clickedBtn.classList.add('active');
-}
+            clickedBtn.classList.add('active');
+        }
 
-</script>
+    </script>
 
 
 
