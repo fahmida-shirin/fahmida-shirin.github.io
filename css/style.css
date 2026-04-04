@@ -100,7 +100,6 @@ header p {
     border: solid 0.01px rgb(113, 12, 207);
     position: relative;
     display: none;
-    display: ;
     z-index: 30;
     transition: 0.3s;
 }
@@ -259,9 +258,7 @@ top: 8px;
   font-family: sans-serif;
   margin-top:18px;
 }
-h3 .category{
-    margin: ;
-}
+
 .category a{color:#FFF;text-decoration: none;}
 
 /*Responsive marquee*/
@@ -357,7 +354,6 @@ h3 .category{
     align-items: center;
     height: 100%;
     width: 100%;
-    justify-content: ;
 }
 .education{
     margin-top: 30px;
@@ -518,7 +514,6 @@ h3 .category{
 
 #works{
 padding:80px 10%;
-background:;
 color:white;
 text-align:center;
 }
@@ -740,7 +735,6 @@ margin-top:10px;
 }
 
 .form-group {
-    width: ;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -759,7 +753,6 @@ margin-top:10px;
     background-color: rgba(64, 64, 64, 1);
     color: rgba(255, 255, 255, 0.75);
     width: 100%;
-    max-width: ;
     height: 45px;
     border-radius: 8px;
     padding: 10px;

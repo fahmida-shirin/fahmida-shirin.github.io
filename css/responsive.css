@@ -1,8 +1,6 @@
 
 @media screen and (max-width:1199px) {
-    .about-img{
-        margin-top: ;
-    }
+    
     .about-content h1{
         font-size: 80px;
     }
@@ -16,12 +14,9 @@
         font-size: 80px;
     }
     .content h1{
-       font-size:;
-    }
-    .content h1{
     font-size:45px ;
-}
-.mobile-menu span{
+    }
+    .mobile-menu span{
       display:none;
    }
    .contact-content{
@@ -30,8 +25,6 @@
    .skills-discrp{
     max-width: 90%;
    }
-
-   
 }
 @media screen and (max-width:1024px) {
     .mobile-menu span{
@@ -40,8 +33,6 @@
    .contact-content{
     padding: 127px 60px;
    }
-
-   
 }
 @media screen and (max-width:991px) {
    #hero{
@@ -56,7 +47,6 @@
    .about-content h1{
     font-size: 65px;
    }
-
    .content h1{
      width: 400;
      font-size: 33px;
@@ -66,7 +56,6 @@
    }
    .skills-title{
     font-size: 65px;
-
    }
    .skills-discrp{
     max-width: 100%;
@@ -99,56 +88,45 @@
    padding-left:0;
    margin-bottom: 0;
    list-style: none;
-
-
-}
-.menu{
+  }
+   .menu{
    display: flex;
-
-
-}
-.contact-form{
-    max-width:;
-    margin: ;
-    padding:px;
-    
-}
-.contact-content{
+  }
+   .contact-content{
     padding: 127px 60px;
-   }
+  }
    .contact-form{
     margin: 0;
-   }
+  }
    .works-title{
     font-size: 65px;
-   }
-
+  }
 }
 @media screen and (max-width:768px) {
-    .profile{
+   .profile{
         text-align: center;
-    }
+  }
    .mobile-menu span{
    display: flex;
    padding-left:0;
    margin-bottom: 0;
    list-style: none;
-}
+ }
 
-.mobile-menu{
+  .mobile-menu{
     display: flex;
-}
-.menu{
+ }
+  .menu{
    display: flex;
-}
-.header-nav{
-    display: none;
+ }
+  .header-nav{
+   display: none;
     
-}
-.contact-form{
-    padding: 25px;
-}
- .contact-para{
+ }
+  .contact-form{
+   padding: 25px;
+ }
+  .contact-para{
     max-width: 110%;
     margin: auto;
     margin-bottom: 60px;
@@ -169,7 +147,6 @@
    }
    .footer-social{
     justify-content: center;
-    flex-direction: ;
    }
    .content h1{
     font-size: 41px;
@@ -275,7 +252,6 @@
    }
    .hero-content h1{
     font-size:26px;
-    margin-top: ;
    }
    .marquee{
     margin-top: 140px;
