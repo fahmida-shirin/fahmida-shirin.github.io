@@ -2,6 +2,11 @@
 *{
     box-sizing: border-box;
 }
+section{
+    padding: 80px 0;
+    
+}
+ 
 body {
     background: black;
     font-family: "Inter", sans-serif;
@@ -150,9 +155,7 @@ top: 8px;
     align-items: center;
     display: flex;
     position: relative;
-    
-    
-
+    padding-top: 100px;
 }
 
 .hero-content p{
@@ -222,12 +225,16 @@ top: 8px;
   overflow: hidden;
   padding: 20px;
   padding-top: 10px;
+  margin-bottom: 80px;
 }
 .marquee .scroll{
   width: 100%;
   display: flex;
   transform: rotate(-1deg);
   height: 60px;
+  outline: 1px solid transparent;
+  backface-visibility: hidden;
+  will-change: transform;
   
 }
 .marquee .scroll div{
@@ -238,6 +245,7 @@ top: 8px;
   font-weight: 500;
   animation: animate-marquee 80s linear infinite;
   animation-delay: -40s;
+  box-shadow: 0 0 1PX 1PX white;
 }
 .marquee .scroll div:nth-child(2){
   animation: animate-marquee-2 80s linear infinite;
@@ -301,7 +309,7 @@ top: 8px;
   
 #about {
     color: white;
-    margin-top: 130px;
+    margin-top: ;
 }
 
 .about-content {
@@ -398,7 +406,7 @@ top: 8px;
 }
 
 #services {
-    margin-top: 130px;
+    margin-top: ;
 
 }
 
@@ -443,7 +451,7 @@ top: 8px;
 }
 
 #skills {
-    margin-top: 130px;
+  margin-top: ;
 }
 
 .skills-title {
@@ -500,7 +508,7 @@ top: 8px;
 }
 
 #works{
-    margin-top: 130px;
+ margin-top: ;
 }
 .works-title{
     color: white;
@@ -660,7 +668,7 @@ margin-top:10px;
 }
 
 #contact {
-    margin-top: 130px;
+    margin-top: ;
 }
 
 .contact-content {
@@ -813,7 +821,7 @@ margin-top:10px;
     
 }
 #footer{
-    margin-top: 100px;
+    
 }
 .footer{
     color:rgba(255, 255, 255, 0.75) ;
@@ -898,18 +906,18 @@ margin-top:10px;
 }
 .call i {
     font-size: 70px;
-    color:  rgb(142, 91, 187)  ;
+    color:  rgb(255, 255, 255)  ;
     transition: all 0.3s ease;
     
     
 }
 .whatsapp i{
     font-size:70px ;
-    color: rgb(142, 91, 187) ;
+    color: rgb(255, 255, 255) ;
     transition: all 0.3s ease;
 }
 .whatsapp i:hover, .call i:hover{
-    color: rgb(66, 19, 83);
+    color: rgb(169, 116, 188);
     transform: scale(1.20);
     
 }
