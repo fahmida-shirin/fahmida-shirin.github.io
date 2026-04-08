@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slick Carousel Example</title>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css" integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css" integrity="sha512-17EgC5I3a7C9+H+3f3Uf1J+q3vB1d2n3/8h1/v2P92c81g6f99k1z/q5q4p35q7+8k/4j5lq8+9q3z3p3q4q8A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  
+</head>
+<body>
+
+    <div class="your-class">
+        <div>Slide 1</div>
+        <div>Slide 2</div>
+        <div>Slide 3</div>
+        <div>Slide 4</div>
+        <div>Slide 5</div>
+        <div>Slide 6</div>
+    </div>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js" integrity="sha512-HGOnQO9+SP1V92SrtZfjqxxtLmVzqZpjFFekvzZVWoiASSQgSr4cw9Kqd2+l8Llp4Gm0G8GIFJ4ddwZilcdb8A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('.your-class').slick({
+                // --- Core Settings ---
+                dots: true,                // Enable dot indicators
+                infinite: true,            // Loop the slider
+                speed: 300,                // Transition speed in ms
+                slidesToShow: 3,           // Number of slides to show
+                slidesToScroll: 1,         // Number of slides to scroll
+                autoplay: true,            // Enable automatic sliding
+                autoplaySpeed: 3000,       // Time between slides
+                arrows: true,              // Show previous/next buttons
+                
+                // --- Custom Nav Buttons (Optional) ---
+                // You would need to add custom HTML for 'prev' and 'next' 
+                // and target them, or use the default arrows provided by slick-theme.css.
+                // To use custom arrows, you can specify their HTML:
+                // prevArrow: '<button type="button" class="slick-prev">Previous</button>',
+                // nextArrow: '<button type="button" class="slick-next">Next</button>',
+
+                // --- Responsive Options ---
+                responsive: [
+                    {
+                        breakpoint: 1024, // Screen size up to 1024px
+                        settings: {
+                            slidesToShow: 2,
+                            slidesToScroll: 2,
+                            infinite: true,
+                            dots: true
+                        }
+                    },
+                    {
+                        breakpoint: 600, // Screen size up to 600px
+                        settings: {
+                            slidesToShow: 1,
+                            slidesToScroll: 1,
+                            arrows: false // Hide arrows on small screens
+                        }
+                    },
+                    {
+                        breakpoint: 480, // Screen size up to 480px
+                        settings: {
+                            slidesToShow: 1,
+                            slidesToScroll: 1,
+                            dots: false, // Hide dots on very small screens
+                            autoplay: false // Disable autoplay on very small screens
+                        }
+                    }
+                ]
+            });
+        });
+    </script>
+</body>
+</html>

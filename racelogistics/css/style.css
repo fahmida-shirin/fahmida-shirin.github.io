@@ -1,0 +1,992 @@
+header{
+    background: #4d2c82;
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+    top:0;
+    left: 0;
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    
+    
+}
+ul,li{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+ a{
+    color: white;
+    text-decoration: none;
+    display: inline-block;
+    
+}
+.nav {
+   padding: 8px;
+   gap:40px;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   gap: 0rem 1rem;
+   height: 100%;
+   width :max-content;
+}
+.nav-ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0rem 1rem;
+}
+.nav a{
+    padding: 10px 15px;
+}
+.nav a:hover{
+    background-color: #3d1f6e;
+    border-radius: 12px;
+}
+
+.nav-btn-ul{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 0;
+    width: max-content;
+}
+.header-content{
+    display:flex;
+    gap: 15px;
+}
+
+a.nav-bt1{
+    color: white;
+    background: #3d1f6e;
+    padding: 6px 17px;
+    
+}
+a.nav-bt1:hover{
+   background: #251047;
+}
+.nav-bt1,.nav-bt2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0px 0.5rem;
+    line-height: 1.2;
+    font-size: 14px;
+    text-align: center;
+    border-radius: 17px;
+    height: 100%;
+    
+    
+}
+a.nav-bt2{
+    color: white;
+    background: #F26221;
+    padding: 7px 17px;
+
+}
+
+a.nav-bt2:hover{
+    background:  #b34715;
+}
+ul,p{
+    margin: 0;
+    padding: 0;
+}
+.mobile-menu{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    justify-content: center;
+    align-items: center;
+    z-index:100;
+   
+}
+
+.mobile-menu span{
+    width: 45px;
+    height:5px;
+    background:  #F26221;
+    border-radius: 13px;
+    border: solid 0.01px  #F26221;
+    transition: 0.3s ;
+    position: relative;
+    display: inline-block;
+    display: none;
+    z-index: 30;
+    
+    
+
+
+}
+.mobile-menu.clicked .one{
+    transform: rotate(45deg);
+    top: 8px;
+
+
+}
+.mobile-menu.clicked .two{
+   opacity: 0;
+
+}
+.mobile-menu.clicked .three{
+   transform: rotate(-45deg);
+   bottom: 18px;
+
+}
+.nav2-mobile{
+    position: fixed;
+    height: 100vh;
+    background: #4d2c82;
+    right: 0;
+    top: 0;
+    width: 50%;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    z-index:2 ;
+    gap: 5px;
+
+
+}
+.nav-ul-mobile{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin-top: 4rem;
+    margin-bottom: 1rem;
+    font-size: 1.4rem;
+    margin-bottom: 80px;
+}
+.mobile-nav{
+    color: white;
+    text-align: center;
+}
+
+.nav-social{
+    margin-top: 15px;
+}
+.social-iconss.mobile span a {
+    padding: 0.4rem;
+    border-radius: 5px;
+    background: #301556;
+    transition: 0.5s all;
+    margin-top: 10px;
+}
+
+
+
+
+#home-banner{
+    height: 100vh;
+    width: 100%;
+    color: rgb(255, 255, 255);
+    align-items: center;
+    justify-content: center;
+    background: url('/racelogistics/img/banner2.avif');
+    background-size: cover;
+    display: flex;
+    position: relative;
+    
+    
+    
+}
+.banner-content{
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+    
+    justify-content: center;
+    max-width:800px ;
+    padding: 0 15px;
+    
+    position: relative;
+}
+h1{
+    font-size: 55px;
+    font-weight: 500;
+}
+h4{
+    font-size: 22px;
+    font-weight: 300;
+}
+.tracker-bar{
+    display: flex;
+    gap: 30px;
+}
+.track-searcher{
+    width: 100%;
+    max-width: 400px;
+}
+.track-searcher input{
+    background-color: white;
+    color: rgb(145, 142, 142);
+    border-radius: 20px;
+    border: none;
+    padding: 16px 20px;
+    width: 100%;
+    
+    
+
+}
+.home-btn{
+    background:#f26221 ;
+    padding: 7px 10px;
+    border-radius: 20px;
+    border:none;
+    color:white;
+    width: 100%;
+    max-width: 180px;
+}
+#welcome-mtop{
+  margin-top: 150px;
+  margin-bottom: 50px;
+}
+
+.heading {
+    font-size: 45px;
+    font-weight: 500;
+    margin-top: 0;
+    margin-bottom: 20px;
+    
+
+}
+.sub-heading{
+    margin: 20px,0px,10px,0px;
+    color: black;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    
+    
+    
+}
+.btn {
+    border: none;
+    padding: 10px 30px;
+    border-radius: 14px;
+    margin-bottom: 20px;
+    background:#4d2c82;
+    margin-top: 10px;
+}
+.num {
+    font-size: 40px;
+    font-weight: 600;
+    font-family: "Poppins", sans-serif;
+}
+.card-head{
+    font-size: 20px;
+    font-weight: 300;
+}
+.card1, .card3 {
+        border-right: solid 1px lightgray;
+    }
+.card1, .card2 {
+        border-bottom: solid 1px lightgray;
+    }
+    .wlcm-img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+ 
+    section#why-us{
+        margin-top: 150px;
+        margin-bottom: 100px;
+    }
+.why-head{
+    font-size: 45px;
+    font-weight: 500;
+    margin-bottom: 40px;
+    
+}
+.why-img{
+    background:linear-gradient(rgba(0, 0, 0, 0), #000000db), url('/racelogistics/img/why.png');
+    height:100%;
+    border-radius: 31px;
+    padding: 10px;
+    background-size: cover;
+    position: relative;
+    background-position: center;
+    
+
+}
+.why-img-data{
+    display:flex;
+    flex-direction: column;
+    padding: 10px;
+    padding-bottom: 15px;
+    color: white;
+    position: relative;
+    gap: 150px;
+    height: 100%;
+    justify-content: space-between;
+}
+.why-card-data{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 15px;
+    padding: 12px;
+    height: 100%;
+    padding-bottom: 16px;
+
+}
+.why-card-data:hover{
+    background-color:#4d2c82 ;
+    color: white;
+    border-radius: 20px;
+}
+ .why-card-data:hover .why-icon{
+    border:solid 2px rgb(208, 108, 21) ;
+    transform: rotate(360deg);
+    border-radius: 50px;
+    transition: all 0.5s;
+    
+}
+.why-icon{
+    background: #eee3ff ;
+    width: max-content;
+    padding: 10px;
+    border-radius: 20px;
+     
+    
+}
+#d2d-service .container{
+    background:#43217a;
+    color: white;
+    padding:#4d2c82;
+    border-radius: 25px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+.details{
+    max-width: 700px;
+    margin: auto;
+}
+.sub-head{
+     padding: 5px 16px;
+     border: solid 1px;
+     border-radius: 23px;
+     width: max-content;
+     margin: auto;
+     margin-top: 25px;
+}
+.d2d-h2{
+    margin-top: 13px;
+    font-size: 40px;
+    font-weight: 500;
+    padding: 0 10px;
+}
+#d2d-service p{
+    font-size: 17px;
+    padding: 0px 10px;
+    margin-bottom: 30px;
+    margin: 0;
+}
+#sect1 .sect1{
+    padding: 20px;
+}
+.card-info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap:10px 0;
+    background: #351d59;
+    padding: 15px;
+    border-radius: 20px;
+    height: 100%;
+    justify-content: space-between;
+    border: solid 1px transparent;
+    transition: 0.4s;
+
+
+}
+.d2d-card .card-info:hover{
+    border-color: #c06311;
+    box-shadow:  #c06311 0px 0px  18px -8px;
+
+}
+.d2d-card .card-info img{
+    transition: 0.5s;
+}
+.d2d-card .card-info:hover img{
+    transform: scale(0.8);
+}
+#sect2 .key-info:hover{
+    border-color: #c06311;
+    box-shadow:  #c06311 0px 0px  18px -8px;
+    
+}
+#sect2 .key-info img{
+    transition: 0.5s;
+}
+#sect2 .key-info:hover img{
+   transform: scale(0.8); 
+}
+
+#d2d_service h4 {
+    
+        font-size: 30px;
+        margin-bottom: 20px;
+}
+
+.key-head{
+ font-size: 30px;
+ margin-bottom: 20px;
+ font-weight: 500;
+ margin-top: 50px;
+ 
+}
+#sect2 .sect2{
+    padding: 20px;
+    margin: 0;
+    
+}
+
+#sect2 .key-info{
+    
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    background:#351d59 ;
+    border-radius: 20px;
+    height: 100%;
+    gap: 10px;
+    padding: 10px;
+    border: solid 1px transparent;
+    transition: 1s;
+}
+
+
+ .small-card{ 
+    display: flex;
+    flex-direction: column;
+    background:#351d59 ;
+    padding: 10px;
+    border-radius: 20px;
+    height: 100%;
+    gap: 15px;
+    justify-content:center;
+    align-items: flex-start;
+    transition: 1s;
+    border: solid 1px transparent;
+}
+.small-card:hover{
+    border-color: #c06311;
+    box-shadow:  #c06311 0px 0px  18px -8px;
+
+}
+.small-card img{
+    transition: 0.5s;
+}
+.small-card:hover img{
+    transform: scale(0.8);
+}
+
+.more-info{
+    display: flex;
+    align-items: center;
+    text-align: left;
+    gap: 10px;
+    
+}
+#sect3{
+    margin-top: 80px;
+}
+.flag-head{
+    font-size: 30px;
+    margin-bottom: 20px;
+    font-weight: 500;
+}
+#sect3 .flag-div{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    max-width: 488px;
+    margin: 0px auto 50px auto;
+    flex-direction: row;
+}
+#sect3 .flag {
+    padding: 7px;
+    background-color: #351d59;
+    border-radius: 10px;
+}
+ .mtop{
+    margin-top: 150px;
+    
+}
+#cta .container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    gap: 20px;
+}
+#cta h2{
+    font-size: 35px;
+    font-weight: 500;
+    max-width: 930px;
+}
+
+#cta p {
+    font-size: 20px;
+    font-weight: 400;
+    max-width: 688px;
+}
+
+.cta-bt {
+    background:#F1F1F1;
+    border: solid 3px #e8def8;
+    border-radius: 20px;
+    padding: 15px 30px;
+    font-size: 20px;
+    box-shadow: #2a124e 0px 6px;
+    transition: 0.5s all;
+}
+.cta-bt a{
+    color: black;
+}
+footer{
+    background: #eee3ff;
+    position: relative;
+    color: #2a124e;
+    padding: 30px 0px;
+    font-size: 16px;
+    z-index: 15;
+
+}
+footer h3 {
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom:20px;
+}
+.ftr-details{
+    margin-bottom: 40px;
+}
+footer a{
+    color: #2a124e;
+}
+footer li{
+    margin: 2px 0px;
+    display: flex;
+    align-items: center;
+
+}
+.ftr-li a{
+    padding: 5px 10px;
+    transition: 0.5s all;
+    border-radius: 11px;
+    overflow-wrap: anywhere;
+}
+.ftr-mail,
+.ftr-call{
+    margin: 3px 0px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+footer .li-addr{
+    margin-top:10px ;
+    gap:12px; 
+    align-items: flex-start;
+    display: flex;
+    gap: 10px;
+    
+}
+.ftr-title a:hover{
+    color: #f26221;
+    background-color:rgb(243, 222, 210) ;
+    border-radius: 10px;
+}
+
+
+.ftrlabel{
+    border-top: 1px solid#2a124e;
+    padding-top: 20px;
+    display: flex;
+    margin-left: 0;
+}
+.wp-call-bt{
+    left:20px;
+    width: 100px;
+    height:100px;
+    position: fixed;
+    bottom:-10px;
+    
+
+
+}
+.call-bt{
+    bottom:10px;
+    position: fixed;
+    left: 40px;
+    height: 100px;
+    width: 200px;
+    
+}
+.sticky-btns{
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    width: 100px;
+    height: 100px;
+    left: 20px;
+    bottom: 50px;
+    
+}
+
+
+#head-banner{
+    width:100%;
+    height:290px;
+    background-size: cover;
+    margin-top:79px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    position: relative;
+    background-repeat: no-repeat;
+}
+.about-banner{
+    background-image: url(/racelogistics/img/about.png);
+    background-position: center bottom;
+}
+.about-head{
+    font-weight: 500;
+    font-size: 50px;
+    color: white;
+}
+#aboutus{
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px 0;
+
+
+}
+.abt-img{
+
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    border-radius:20px;
+    width: 100%;
+    box-shadow: #f26221 7px 7px;
+    border: solid 3px white;
+}
+.about-details{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px 0;
+    height: 100%;
+    
+    
+ 
+}
+.headings{
+    text-align: center;
+    margin-bottom: 40px;
+}
+.abt-btn{
+    padding: 6px 18px;
+    border: 1px solid#2a124e ;
+    border-radius: 20px;
+    font-size: 15px;
+    max-width: max-content;
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 20px;
+
+    
+    
+}
+.abt-title{
+    font-weight: 500;
+    font-size: 40px;
+}
+#vismiss h3{
+    font-size: 35px;
+    font-weight: 645;
+    position: relative;
+    width: max-content;
+
+}
+#vismiss .vismiss{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+
+}
+#vismiss .mission h3::after{
+  background: #f26221;
+}
+#vismiss .vision h3::after {
+    background: #6610f2;
+}
+#vismiss h3::after {
+    content: "";
+    position: absolute;
+    display: block;
+    bottom: 2px;
+    right: -5px;
+    width: 100%;
+    height: 8px;
+    z-index: -1;
+}
+
+   .service-banner {
+    height: 290px;
+    width: 100%;
+    background-size: cover;
+    margin-top: 79px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    position: relative;
+    background-position: center bottom;
+    background-image: url(/racelogistics/img/service.png);
+
+   }
+
+   #service-cards{
+    margin-top: 50px;
+   }
+   .service-card {
+    border-radius: 15px;
+    overflow: hidden;
+    background: #351d590e;
+    color: #4d2c82;
+    gap: 30px;
+    height: 100%;
+    font-weight: 300;
+    
+   }
+   .service-card img {
+    border-bottom: solid 2px var(--bg-secondary);
+    object-fit: cover;
+    object-position: center;
+    width: 100%;
+    height: 280px;
+   }
+   .disc {
+    padding: 13px 28px 20px 15px;
+}
+ .head-serv{
+    font-size: 25px;
+    font-weight: 500;
+}
+.para-serv{
+    font-weight:400 ;
+}
+#contact-head-banner{
+    width:100%;
+    background-size: cover;
+    margin-top: 79px;
+    display: flex;
+}
+.contact-banner{
+    background-position: center bottom;
+    background-image:url(/racelogistics/img/contact.banner.png);
+    height: 400px !important;
+}
+.contact{
+    background-color:#351d59 ;
+    color: white;
+    width: 100%;
+    top: -140px;
+    position: relative;
+    z-index: 2;
+    padding: 50px 30px;
+    border-radius: 20px;
+    border: solid 2px white;
+    color: white;
+}
+
+ .contact-title {
+    border-bottom: solid 1px #4d2c82;
+    margin-bottom: 10px;
+    border-left: solid 5px #f26221;
+    padding-left: 5px;
+    
+}
+
+.social-icons span a {
+    padding: 0.4rem;
+    border-radius: 5px;
+    background: #E0CBFF;
+    transition: 0.5s all;
+    margin-top: 10px;
+}
+.social-icons span a:hover{
+    background-color: #f2622126;
+}
+
+.flex-bottom{
+    display: flex;
+    flex-direction: column;
+    margin:2px;
+}
+form input,
+form select,
+form textarea{
+    border-radius: 10px;
+    padding: 10px;
+}
+.bottom-btn{
+    background: white;
+    color: black;
+    border-radius: 8px;
+    margin-top: 5px;
+}
+ .contact-info span{
+    padding: 7px 10px;
+    display: block;
+    background: #4d2c82;
+    margin-bottom: 10px;
+    width: max-content;
+    border-radius: 5px;
+}
+.cntct-icon,
+.cntct-mail{
+    filter: invert(1);
+    color: green;
+}
+
+.new-address span{
+    padding: 7px 10px;
+    display: block;
+    background: #4d2c82;
+    margin-bottom: 10px;
+    width: max-content;
+    border-radius: 5px;
+}
+
+.new-address{
+    margin-bottom:30px;
+}
+#services{
+    margin-bottom: 90px;
+    margin-top: 30px;
+}
+.slide{
+    font-size: 20px;
+    padding-right: 5px;
+    position: relative;
+    height: 400px;
+}
+.slide img{
+    width: 100%;
+    height: 100%;
+}
+
+.label{
+    position: absolute;
+    bottom: 10px;
+    background:#4d2c8240;
+    width: 80%;
+    left: 8px;
+    text-align: center;
+    border-radius:0 10px 10px 0;
+    backdrop-filter: blur(30px);
+    color:white;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px;
+
+}
+.slide-head{
+    font-size: 25px;
+}
+.slide-para{
+    font-weight: 300;
+}
+#services h2{
+    font-size: 45px;
+    text-align: center;
+}
+.services-para{
+    text-align: center;
+    font-size: 25px;
+    font-weight: 400;
+    margin-bottom: 40px;
+}
+.your-class .slick-prev{
+    position: absolute;
+    left: -11px;
+    top: 45%;
+    z-index: 1;
+    border: none;
+    border-radius: 10px;
+    background: rgba(0, 0, 0, 0.641);
+    backdrop-filter: blur(10px);
+    padding: 10px 10px;
+
+}
+.your-class .slick-next{
+    position: absolute;
+    right: -11px;
+    top: 45%;
+    z-index: 1;
+    border: none;
+    border-radius: 10px;
+    background: rgba(0, 0, 0, 0.641);
+    backdrop-filter: blur(10px);
+    padding: 10px 10px;
+
+
+}
+.arrow{
+    color: #d78741;
+    font-size: 30px;
+}
+#tracker{
+    background:#351d59 ;
+    background-image:url(/racelogistics/img/tracker.png);
+    padding: 30px;
+    color: white;
+    background-size: contain;
+    background-position: right bottom;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+}
+.tracking-card{
+    margin-top: 170px;
+}
+.tracking-card .search-result {
+    background: #2e194e;
+    padding: 20px;
+    border-radius: 20px;
+    margin-top: 15px;
+    transition: 0.5s all ease-in-out;
+    width:100%;
+    max-width: 610px;
+}
+
+
+
+
+
+
+
+    
+
+    
