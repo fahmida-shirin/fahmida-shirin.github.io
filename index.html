@@ -662,6 +662,13 @@
             buttons.forEach(btn => btn.classList.remove('active'));
 
             clickedBtn.classList.add('active');
+            
+            /* HIDE OR SHOW SLICK ARROWS */
+            if (category === 'website') {
+                $('.slick-arrow').hide();
+            } else {
+                $('.slick-arrow').show();
+            }
         }
 
     </script>
