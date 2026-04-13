@@ -966,13 +966,13 @@ header p {
 
 .whatsapp {
     position: fixed;
-    bottom: 26%;
+    bottom: 22%;
     right: 27px;
 
 }
 
 .call i {
-    font-size: 70px;
+    font-size: 50px;
     color: rgb(255, 255, 255);
     transition: all 0.3s ease;
 
@@ -980,7 +980,7 @@ header p {
 }
 
 .whatsapp i {
-    font-size: 70px;
+    font-size: 50px;
     color: rgb(255, 255, 255);
     transition: all 0.3s ease;
 }
