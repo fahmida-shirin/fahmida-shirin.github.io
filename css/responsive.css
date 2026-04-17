@@ -358,27 +358,7 @@
     margin-top: 30px;
   }
 
-  .whatsapp i {
-    font-size: 60px;
-    color: rgb(255, 255, 255);
-  }
-
-  .call i {
-    font-size: 60px;
-    color: rgb(255, 255, 255);
-  }
-
-  .call {
-    bottom: 18%;
-    right: 27px;
-
-  }
-
-  .whatsapp {
-    bottom: 28%;
-    right: 27px;
-
-  }
+  
   .hero-content p{
     font-size: 10px;
   }
