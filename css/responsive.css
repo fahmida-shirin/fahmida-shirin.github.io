@@ -191,7 +191,7 @@
   }
 
   #hero {
-    margin-top: 80px;
+    margin-top: 20px;
   }
 
   .footer-nav {
@@ -250,7 +250,7 @@
   }
 
   #hero {
-    margin-top: 60px;
+    margin-top: 20px;
   }
 
   .content h1 {
@@ -330,7 +330,7 @@
     font-size: 50px;
   }
 
-  .hero-content p,
+  .hero-para,
   .about-content p,
   .service-card p,
   .skills-discrp,
@@ -359,8 +359,11 @@
   }
 
   
-  .hero-content p{
+  .status-badge{
     font-size: 10px;
+  }
+  #hero {
+    margin-top: 20px;
   }
 
 }
@@ -406,7 +409,7 @@
   }
 
   .hero-content h1 {
-    font-size: 26px;
+    font-size: 28px;
   }
 
   .marquee {
@@ -448,12 +451,15 @@
   }
 
   #hero {
-    margin-top: 80px;
+    margin-top: 20px;
   }
 
   .skills-discrp {
     max-width: 97%;
     margin: auto;
+  }
+  .hero-para{
+    font-size:14px;
   }
 
 

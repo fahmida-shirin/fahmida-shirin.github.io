@@ -133,7 +133,7 @@ header p {
 .nav-ul-mobile {
     display: flex;
     flex-direction: column;
-    gap: 2rem;
+    gap: 3rem;
     margin-top: 4rem;
     margin-bottom: 1rem;
     font-size: 1.2rem;
@@ -152,10 +152,10 @@ header p {
     background: rgb(66, 24, 105);
     right: 0;
     top: 0;
-    width: 50%;
+    width: 100%;
     display: none;
     align-items: center;
-    justify-content: flex-start;
+    justify-content: center;
     z-index: 2;
     height: 100vh;
 }
@@ -171,7 +171,15 @@ header p {
     padding-top: 100px;
 }
 
-.hero-content p {
+.status-badge {
+    color: rgba(255, 255, 255, 0.75);
+    font-size: 18px;
+    color: rgba(255, 255, 255, 0.75);
+    font-size: 18px;
+    line-height: 1.8;
+    margin-bottom: 35px;
+}
+.hero-para{
     color: rgba(255, 255, 255, 0.75);
     font-size: 18px;
     color: rgba(255, 255, 255, 0.75);
@@ -1069,65 +1077,39 @@ header p {
 
 }
 
-.call {
+.sticky-buttons {
     position: fixed;
-    bottom: 13%;
-    right: 27px;
-
+    bottom: 24px;
+    right: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    z-index: 1000;
 }
 
-.whatsapp {
-    position: fixed;
-    bottom: 21%;
-    right: 27px;
-
-}
-
-.call i {
-    font-size: 50px;
-    color: rgb(255, 255, 255);
-    transition: all 0.3s ease;
-
-
-}
-
-.whatsapp i {
-    font-size: 50px;
-    color: rgb(255, 255, 255);
+.sticky-buttons a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    background-color: #8B5CF6;
+    border-radius: 50%;
+    color: #FFFFFF;
+    font-size: 24px;
+    text-decoration: none;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
     transition: all 0.3s ease;
 }
 
-.whatsapp i:hover,
-.call i:hover {
-    color: rgb(169, 116, 188);
-    transform: scale(1.20);
-
-}
+.sticky-buttons a i {
+    color: #FFFFFF;
 }
 
-bottom: 22%;
-right: 27px;
-
+.sticky-buttons .whatsapp i {
+    font-size: 32px;
 }
 
-.call i {
-    font-size: 50px;
-    color: rgb(255, 255, 255);
-    transition: all 0.3s ease;
-
-
-}
-
-.whatsapp i {
-    font-size: 50px;
-    color: rgb(255, 255, 255);
-    transition: all 0.3s ease;
-}
-
-.whatsapp i:hover,
-.call i:hover {
-    color: rgb(169, 116, 188);
-    transform: scale(1.20);
-
-}
+.sticky-buttons a:hover {
+    transform: scale(1.10);
 }
