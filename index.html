@@ -14,6 +14,8 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
         rel="stylesheet" crossorigin="anonymous">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="js/MagicBento.js"></script>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" rel="stylesheet"
         media="print" onload="this.media='all'">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css" rel="stylesheet"
@@ -80,8 +82,7 @@
                             <h1>Hey, I'm<span class="myname"> Fahmida Shirin</span>, <span class="role">UI/UX</span>
                                 Designer &<br>
                                 Front-End Developer</h1>
-                            <p class="hero-para">Crafting intuitive designs and functional web interfaces that deliver seamless user
-                                experiences.</p>
+                            <p class="hero-para"> I design intuitive experiences and build responsive web interfaces</p>
                             <div class="hero-btns">
                                 <a href="#contact" class="hero-btn primary">Hire Me</a>
                                 <a href="#works" class="hero-btn secondary">View Projects</a>
@@ -676,6 +677,22 @@
 
 
 
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const formElement = document.querySelector('.contact-form');
+            if (formElement) {
+                new MagicBento(formElement, {
+                    glowColor: "171, 71, 255", // High-end purple glow
+                    spotlightRadius: 350,
+                    enableTilt: true,
+                    enableMagnetism: true,
+                    enableStars: true,
+                    enableSpotlight: true,
+                    enableBorderGlow: true
+                });
+            }
+        });
+    </script>
 </body>
 
 </html>

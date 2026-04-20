@@ -179,7 +179,8 @@ header p {
     line-height: 1.8;
     margin-bottom: 35px;
 }
-.hero-para{
+
+.hero-para {
     color: rgba(255, 255, 255, 0.75);
     font-size: 18px;
     color: rgba(255, 255, 255, 0.75);
@@ -194,6 +195,7 @@ header p {
     margin-bottom: 25px;
     margin-top: 10px;
     font-size: 57px;
+    line-height: 1.3;
 }
 
 .role {
@@ -884,7 +886,7 @@ header p {
 .info-item a {
     margin: 0;
     font-size: 16px;
-    color: rgba(255, 255, 255, 0.75);
+    color: rgba(255, 255, 255, 0.863);
     font-weight: 300;
 }
 
@@ -892,20 +894,56 @@ header p {
     display: flex;
     flex-direction: column;
     gap: 34px;
-    width: px;
     margin: auto;
     border-radius: 20px;
-    color: white;
+    color: rgba(255, 254, 254, 0.952);
     padding: 79px 55px;
-    background: rgba(38, 38, 38, 1);
-    border: 0.2px solid rgba(200, 141, 255, 0.201);
+    background: rgba(18, 18, 22, 1);
+    border: 1px solid rgba(255, 255, 255, 0.05);
     max-width: 450px;
     margin-left: auto;
+    position: relative;
+    overflow: hidden;
+    transform-style: preserve-3d;
+}
 
+.contact-form>* {
+    position: relative;
+    z-index: 20;
+}
 
+/* MagicBento Effects */
+.magic-bento-card--border-glow::after {
+    content: '';
+    position: absolute;
+    inset: -1.5px;
+    padding: 1.5px;
+    background: radial-gradient(var(--glow-radius, 350px) circle at var(--glow-x, 50%) var(--glow-y, 50%),
+            rgba(var(--glow-color, 171, 71, 255), calc(var(--glow-intensity, 0) * 0.9)) 0%,
+            rgba(var(--glow-color, 171, 71, 255), calc(var(--glow-intensity, 0) * 0.5)) 30%,
+            transparent 70%);
+    border-radius: inherit;
+    -webkit-mask:
+        linear-gradient(#fff 0 0) content-box,
+        linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    mask:
+        linear-gradient(#fff 0 0) content-box,
+        linear-gradient(#fff 0 0);
+    mask-composite: exclude;
+    pointer-events: none;
+    z-index: 10;
+}
 
+.particle {
+    will-change: transform, opacity;
+}
 
-
+.global-spotlight {
+    mix-blend-mode: screen;
+    will-change: transform, opacity;
+    z-index: 200 !important;
+    pointer-events: none;
 }
 
 .form-group {
@@ -945,6 +983,12 @@ header p {
     padding: 10px;
     border: none;
     min-height: 100px;
+}
+
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+    color: rgba(255, 255, 255, 0.4);
+    /* Muted color for placeholders */
 }
 
 .cntct-btn {
