@@ -768,7 +768,22 @@ header p {
 .slick-list {
     margin: 0 -10px;
 }
-
+.work-card{
+    position: relative;
+}
+.work-card a{
+    position: absolute;
+    right: 10px;
+    bottom: 8px;
+    padding: 8px 10px;
+    background: rgba(137, 12, 255, 1);
+    color: white;
+    text-decoration: none;
+    border-radius: 12px;
+    font-weight: 600;
+    font-size: 14px;
+    
+}
 .slide-card {
     background: #160722;
     border-radius: 18px;
