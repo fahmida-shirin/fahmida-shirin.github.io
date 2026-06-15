@@ -711,7 +711,7 @@ header p {
 /* website grid */
 .work-container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    grid-template-columns: repeat(2, 1fr);
     gap: 25px;
 }
 
@@ -721,9 +721,13 @@ header p {
     border-radius: 12px;
 }
 
+.work-container .work-card:first-child {
+    grid-column: 1 / -1;
+}
+
 .work-card img {
-    height: 350px;
-    object-fit: cover;
+    width: 100%;
+    height: auto;
     display: block;
 }
 
