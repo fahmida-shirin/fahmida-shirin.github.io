@@ -1,0 +1,373 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Shopping Cart</title>
+  <link rel="icon" href="img/Favicon.png" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/responsive.css" />
+</head>
+
+<body class="cart-page">
+  <header>
+    <div class="container">
+      <div class="header">
+        <div class="logo">
+          <img src="img/logoo.svg" alt="logo image" />
+        </div>
+        <nav class="header-nav">
+          <a href="index.html">Home</a>
+          <a href="shop.html">Shop</a>
+          <a href="rooms.html">Rooms</a>
+          <a href="room.builder.html">Room Builder</a>
+          <a href="about.html">About</a>
+          <a href="contact.html">Contact</a>
+        </nav>
+        <div class="mobile-menu">
+          <span class="one"></span>
+          <span class="two"></span>
+          <span class="three"></span>
+        </div>
+
+        <div class="nav2-mobile">
+          <div class="mobile-nav">
+            <ul class="nav-ul-mobile">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="shop.html">Shop</a></li>
+              <li><a href="rooms.html">Rooms</a></li>
+              <li><a href="room.builder.html">Room Builder</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="search-box">
+          <input type="text" placeholder="Search furniture... " />
+          <img class="search-icon" src="img/search.svg" alt="" />
+        </div>
+        <div class="header-icons">
+          <div class="mobile-search-box">
+            <a href="#" class="mobile-search">
+              <img class="serch-img" src="img/black-search.svg" alt="" /></a>
+            <div class="mobile-input">
+              <input type="text" placeholder="Search furniture..." />
+            </div>
+          </div>
+          <a href="whishlist.html"> <img src="img/wishlist.svg" alt="" /></a>
+          <a href="cart.html"><img src="img/cart.svg" alt="" /></a>
+          <a href="profile.html"><img src="img/profile.svg" alt="" /></a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <section id="cart-section">
+    <div class="container">
+      <div class="cart-contents">
+        <div class="cart-top">
+          <h1 class="cart-title">Shopping Cart</h1>
+          <div class="cart-breadcrumb">
+            <a href="index.html">Home</a>
+            <span>></span>
+            <span>Cart</span>
+          </div>
+        </div>
+        <div class="row g-4">
+          <div class="col-lg-8 col-12">
+            <div class="cart-box">
+              <div class="cart-header">
+                <div>PRODUCT</div>
+                <div>PRICE</div>
+                <div>QUANTITY</div>
+                <div>TOTAL</div>
+              </div>
+
+              <!-- Cart Item 1 -->
+              <div class="cart-item" data-item-id="sofa">
+                <div class="cart-product">
+                  <img src="img/cart-sofa.png" alt="Modern Fabric Sofa" />
+                  <div>
+                    <h4>Modern Fabric Sofa</h4>
+                    <h5>Premium quality fabric <br> sofa with wooden legs.</h5>
+                    <p class="remove-btn">Remove</p>
+                  </div>
+                </div>
+
+                <div class="cart-price unit-price" data-price="32999">₹32,999</div>
+
+                <div class="quantity">
+                  <button class="qty-btn qty-minus">-</button>
+                  <span class="qty-val">1</span>
+                  <button class="qty-btn qty-plus">+</button>
+                </div>
+
+                <div class="cart-price line-total">₹32,999</div>
+              </div>
+
+              <!-- Cart Item 2 -->
+              <div class="cart-item" data-item-id="table">
+                <div class="cart-product">
+                  <img src="img/cart-table.png" alt="Wooden Dining Table" />
+                  <div>
+                    <h4>Wooden Dining Table</h4>
+                    <h5>6 Seater dining table in <br> solid wood.</h5>
+                    <p class="remove-btn">Remove</p>
+                  </div>
+                </div>
+
+                <div class="cart-price unit-price" data-price="18499">₹18,499</div>
+
+                <div class="quantity">
+                  <button class="qty-btn qty-minus">-</button>
+                  <span class="qty-val">1</span>
+                  <button class="qty-btn qty-plus">+</button>
+                </div>
+
+                <div class="cart-price line-total">₹18,499</div>
+              </div>
+
+              <!-- Cart Item 3 -->
+              <div class="cart-item" data-item-id="chair">
+                <div class="cart-product">
+                  <img src="img/cart-chair.png" alt="Luxury Armchair" />
+                  <div>
+                    <h4>Luxury Armchair</h4>
+                    <h5>Comfortable armchair for <br> your living room.</h5>
+                    <p class="remove-btn">Remove</p>
+                  </div>
+                </div>
+
+                <div class="cart-price unit-price" data-price="12999">₹12,999</div>
+
+                <div class="quantity">
+                  <button class="qty-btn qty-minus">-</button>
+                  <span class="qty-val">1</span>
+                  <button class="qty-btn qty-plus">+</button>
+                </div>
+
+                <div class="cart-price line-total">₹12,999</div>
+              </div>
+
+              <div class="cart-footer">
+                <button class="continue-btn" onclick="location.href='shop.html'">
+                  <img src="img/leftarrow.png" alt="">Continue Shopping
+                </button>
+                <p class="clear-cart">
+                  <img src="img/delete-cart.svg" alt="">Clear Cart
+                </p>
+              </div>
+            </div>
+
+            <!-- Empty Cart Container -->
+            <div class="empty-cart-view" style="display: none;">
+              <div class="empty-cart-card text-center">
+                <div class="empty-cart-icon mb-4">
+                  <svg width="100" height="100" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M3 3H5L5.4 5M5.4 5H21L19 13H7M5.4 5L7 13M7 13L4.707 15.293C4.077 15.923 4.523 17 5.414 17H19" stroke="#8b5e3c" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    <circle cx="9" cy="20" r="1.5" fill="#8b5e3c" stroke="#8b5e3c" stroke-width="1"/>
+                    <circle cx="17" cy="20" r="1.5" fill="#8b5e3c" stroke="#8b5e3c" stroke-width="1"/>
+                  </svg>
+                </div>
+                <h3>Your Cart is Empty</h3>
+                <p class="text-muted">You haven't added any products to your cart yet. Explore our premium furniture collection to find your perfect pieces!</p>
+                <a href="shop.html" class="shop-now-btn">Start Shopping <img src="img/button-arrow.svg" alt="" style="width: 18px; margin-left: 6px;"></a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Order Summary -->
+          <div class="col-lg-4 col-12">
+            <div class="order-summary">
+              <h2>ORDER SUMMARY</h2>
+
+              <div class="summary-row">
+                <span>Subtotal</span>
+                <span class="cart-subtotal">₹64,497</span>
+              </div>
+
+              <div class="summary-row">
+                <span>Shipping</span>
+                <span class="shipping-cost green-text">Free</span>
+              </div>
+
+              <div class="summary-row">
+                <span>Discount</span>
+                <span class="cart-discount green-text">₹0</span>
+              </div>
+
+              <div class="summary-row total">
+                <span>Total</span>
+                <span class="cart-total brown-text">₹64,497</span>
+              </div>
+
+              <button class="proceed-btn">
+                <img src="img/proceed-Lock.png" alt="" class="proceed-icon">PROCEED TO CHECKOUT
+              </button>
+              
+              <div class="secure-payment">
+                <img src="img/cart-secure.png" alt="">
+                <p>Secure Checkout 100% <br> secure payment</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+ <section id="features">
+        <div class="container">
+            <div class="stats-wrapper">
+                <div class="stats-box">
+                    <div class="status-icon">
+                        <img src="img/black-lorry.svg" alt="">
+                    </div>
+                    <div class="box-cntnt">
+                        <h3>Free Delivery</h3>
+                        <p>On all orders above ₹25,000</p>
+                    </div>
+                </div>
+
+
+                <div class="stats-box">
+                    <div class="status-icon">
+                        <img src="img/badge.svg" alt="">
+                    </div>
+                    <div class="box-cntnt">
+                        <h3>Premium Quality</h3>
+                        <p>Crafted with the finest meterials</p>
+                    </div>
+                </div>
+
+
+                <div class="stats-box">
+                    <div class="status-icon">
+                        <div class="round-arrow">
+                            <img src="img/round-arrow.svg" alt="">
+                        </div>
+                    </div>
+                    <div class="box-cntnt">
+                        <h3>Easy Returns</h3>
+                        <p>Hassle-free returns within 7 days</p>
+                    </div>
+                </div>
+
+
+                <div class="stats-box">
+                    <div class="status-icon">
+                        <img src="img/payment.svg" alt="">
+                    </div>
+                    <div class="box-cntnt">
+                        <h3>Secure Payment</h3>
+                        <p>100% secure payment guaranteed</p>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+
+
+    </section>
+
+  <!-- Footer Section -->
+  <section id="footer">
+    <div class="container">
+      <div class="footer-wrapper">
+        <div class="row">
+          <div class="col-lg-4">
+            <div class="footer-about">
+              <img class="footer-logo" src="img/footer-logo.svg" alt="Smart Interio Logo">
+              <p class="footer-para">Smart Interio helps you design beautiful, functional spaces with ease. Explore
+                furniture, visualize in 2D & 3D, and build your perfect room.
+              </p>
+              <div class="social-icons">
+                <a href="#"><img src="img/instagram.svg" alt="Instagram"></a>
+                <a href="#"><img src="img/facebook.svg" alt="Facebook"></a>
+                <a href="#"><img src="img/pinterest.svg" alt="Pinterest"></a>
+                <a href="#"><img src="img/youtube.svg" alt="Youtube"></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-2">
+            <div class="footer-links">
+              <h3>SHOP</h3>
+              <ul>
+                <li><a href="shop.html">All Products</a></li>
+                <li><a href="shop.html">Sofas</a></li>
+                <li><a href="shop.html">Beds</a></li>
+                <li><a href="shop.html">Tables</a></li>
+                <li><a href="shop.html">Chairs</a></li>
+                <li><a href="shop.html">Storage</a></li>
+                <li><a href="shop.html">Decor</a></li>
+                <li><a href="shop.html">Lighting</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-2">
+            <div class="footer-links">
+              <h3>ROOMS</h3>
+              <ul>
+                <li><a href="rooms.html">Living Room</a></li>
+                <li><a href="rooms.html">Bedroom</a></li>
+                <li><a href="rooms.html">Dining Room</a></li>
+                <li><a href="rooms.html">Home Office</a></li>
+                <li><a href="rooms.html">Outdoor</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-2">
+            <div class="footer-links">
+              <h3>COMPANY</h3>
+              <ul>
+                <li><a href="about.html">About</a></li>
+                <li><a href="index.html#how-it-works">How It Works</a></li>
+                <li><a href="contact.html">Contact</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-2">
+            <div class="footer-newsletter">
+              <h3>NEWSLETTER</h3>
+              <p>
+                Subscribe to get special offers, and once-in-a lifetime deals.
+              </p>
+              <div class="newsletter-input">
+                <img class="email-icon" src="img/email.svg" alt="">
+                <input type="email" placeholder="Enter your email">
+              </div>
+              <button>SUBSCRIBE</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>2026 Smart Interio. All rights reserved.</p>
+        <div class="footer-policy">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Use</a>
+          <a href="#">Refund Policy</a>
+        </div>
+        <div class="footer-payment">
+          <img src="img/visa.png" alt="Visa">
+          <img src="img/rounds.png" alt="Mastercard">
+          <img src="img/paypal.png" alt="Paypal">
+          <img src="img/American express.png" alt="Amex">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Scripts -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+    integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/style.js" defer></script>
+</body>
+
+</html>
