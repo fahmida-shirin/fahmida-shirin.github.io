@@ -1,0 +1,208 @@
+/* =========================================================
+   WORKFLOW PRO — CASE STUDY
+   Responsive Stylesheet
+========================================================= */
+
+/* =========================================================
+   1. RESPONSIVE — TABLET
+========================================================= */
+
+@media (max-width: 900px) {
+
+    .container {
+        width: min(100% - 36px, 760px);
+    }
+
+    .section {
+        padding: 48px 0;
+    }
+
+    .project-info {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .info-item:nth-child(2) {
+        border-right: none;
+    }
+
+    .info-item:nth-child(-n + 2) {
+        border-bottom: 1px solid var(--border);
+    }
+
+    .goal-list {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .design-system-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .learning-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 768px) {
+    .design-system-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .screen-grid {
+        grid-template-columns: 1fr;
+        gap: 24px;
+    }
+
+    .ui-module {
+        margin-top: 36px;
+    }
+
+    .design-system h3,
+    .ui-module h3 {
+        font-size: 22px;
+    }
+}
+
+
+/* =========================================================
+   2. RESPONSIVE — MOBILE
+========================================================= */
+
+@media (max-width: 640px) {
+
+    .container {
+        width: calc(100% - 30px);
+    }
+
+    .hero {
+        padding: 45px 0 35px;
+    }
+
+    .hero h1 {
+        font-size: 38px;
+    }
+
+    .hero h2 {
+        font-size: 18px;
+    }
+
+    .hero-description {
+        font-size: 15px;
+    }
+
+    .hero-buttons {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .btn {
+        width: 100%;
+    }
+
+    .hero-image {
+        margin-top: 32px;
+        padding: 7px;
+        border-radius: 14px;
+    }
+
+    .section {
+        padding: 38px 0;
+    }
+
+    .section h2 {
+        font-size: 28px;
+    }
+
+    .section-description {
+        font-size: 15px;
+    }
+
+    .project-info {
+        grid-template-columns: 1fr;
+    }
+
+    .info-item {
+        border-right: none;
+        border-bottom: 1px solid var(--border);
+    }
+
+    .info-item:last-child {
+        border-bottom: none;
+    }
+
+    .goal-list {
+        grid-template-columns: 1fr;
+    }
+
+    .ia-list {
+        grid-template-columns: 1fr;
+    }
+
+    .wireframe-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .design-system-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .screen-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .ui-module {
+        margin-top: 32px;
+    }
+
+    .user-flow {
+        align-items: stretch;
+        flex-direction: column;
+    }
+
+    .flow-card {
+        padding: 20px;
+    }
+
+    .learning-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .footer {
+        padding: 35px 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .design-system-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .system-item {
+        padding: 18px;
+    }
+
+    .browser-bar {
+        height: 30px;
+        gap: 6px;
+        padding: 0 10px;
+    }
+
+    .browser-bar span {
+        width: 7px;
+        height: 7px;
+        flex-basis: 7px;
+    }
+}
+
+
+/* =========================================================
+   3. ACCESSIBILITY & UTILITIES
+========================================================= */
+
+a:focus-visible {
+    outline: 3px solid rgba(37, 99, 235, 0.35);
+    outline-offset: 4px;
+}
+
+img {
+    user-select: none;
+}

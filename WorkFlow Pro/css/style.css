@@ -1,0 +1,782 @@
+/* =========================================================
+   WORKFLOW PRO — UI/UX CASE STUDY
+   Main Stylesheet
+========================================================= */
+
+/* =========================================================
+   1. RESET
+========================================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Inter", sans-serif;
+    background: #ffffff;
+    color: #111827;
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+button,
+input,
+textarea,
+select {
+    font-family: inherit;
+}
+
+
+/* =========================================================
+   2. ROOT VARIABLES
+========================================================= */
+
+:root {
+    --navy: #0b1630;
+    --navy-dark: #071126;
+
+    --blue: #2563eb;
+    --blue-dark: #1d4ed8;
+    --blue-light: #eff6ff;
+    --blue-soft: #dbeafe;
+
+    --text: #111827;
+    --text-secondary: #4b5563;
+    --text-muted: #6b7280;
+
+    --border: #e5e7eb;
+    --border-light: #eef0f3;
+
+    --background: #ffffff;
+    --background-soft: #f8fafc;
+    --background-blue: #f7faff;
+
+    --shadow-sm: 0 4px 15px rgba(15, 23, 42, 0.05);
+    --shadow-md: 0 15px 40px rgba(15, 23, 42, 0.08);
+    --shadow-lg: 0 25px 70px rgba(15, 23, 42, 0.12);
+
+    --radius-sm: 10px;
+    --radius-md: 16px;
+    --radius-lg: 24px;
+}
+
+
+/* =========================================================
+   3. CONTAINER
+========================================================= */
+
+.container {
+    width: min(1180px, calc(100% - 48px));
+    margin: 0 auto;
+}
+
+
+/* =========================================================
+   4. HERO
+========================================================= */
+
+.hero {
+    position: relative;
+    padding: 65px 0 50px;
+    background:
+        radial-gradient(circle at 80% 10%,
+            rgba(37, 99, 235, 0.10),
+            transparent 35%),
+        linear-gradient(180deg,
+            #f8fbff 0%,
+            #ffffff 100%);
+    overflow: hidden;
+}
+
+.hero .container {
+    text-align: center;
+}
+
+.eyebrow {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    margin-bottom: 18px;
+    padding: 8px 14px;
+
+    border: 1px solid var(--blue-soft);
+    border-radius: 999px;
+
+    background: var(--blue-light);
+    color: var(--blue);
+
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+}
+
+.hero h1 {
+    color: var(--navy);
+    font-size: clamp(48px, 7vw, 88px);
+    line-height: 1.05;
+    letter-spacing: -0.055em;
+    font-weight: 800;
+}
+
+.hero h2 {
+    margin-top: 14px;
+
+    color: var(--text-secondary);
+
+    font-size: clamp(20px, 3vw, 30px);
+    line-height: 1.3;
+    font-weight: 500;
+    letter-spacing: -0.02em;
+}
+
+.hero-description {
+    width: min(680px, 100%);
+    margin: 18px auto 0;
+
+    color: var(--text-muted);
+
+    font-size: 17px;
+    line-height: 1.8;
+}
+
+
+/* =========================================================
+   5. HERO BUTTONS
+========================================================= */
+
+.hero-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+
+    margin-top: 26px;
+}
+
+.btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    min-height: 48px;
+    padding: 0 22px;
+
+    border-radius: 10px;
+
+    font-size: 14px;
+    font-weight: 600;
+
+    transition:
+        transform 0.25s ease,
+        box-shadow 0.25s ease,
+        background 0.25s ease;
+}
+
+.btn:hover {
+    transform: translateY(-2px);
+}
+
+.btn-primary {
+    background: var(--blue);
+    color: #ffffff;
+
+    box-shadow:
+        0 10px 25px rgba(37, 99, 235, 0.20);
+}
+
+.btn-primary:hover {
+    background: var(--blue-dark);
+    box-shadow:
+        0 14px 30px rgba(37, 99, 235, 0.28);
+}
+
+.btn-secondary {
+    border: 1px solid var(--border);
+
+    background: #ffffff;
+    color: var(--navy);
+
+    box-shadow: var(--shadow-sm);
+}
+
+.btn-secondary:hover {
+    border-color: var(--blue-soft);
+    color: var(--blue);
+}
+
+
+/* =========================================================
+   6. HERO IMAGE
+========================================================= */
+
+.hero-image {
+    position: relative;
+
+    margin: 45px auto 0;
+
+    width: min(1100px, 100%);
+
+    padding: 10px;
+
+    border: 1px solid rgba(37, 99, 235, 0.12);
+    border-radius: 20px;
+
+    background: #ffffff;
+
+    box-shadow: var(--shadow-lg);
+}
+
+.hero-image img {
+    width: 100%;
+
+    border-radius: 13px;
+
+    border: 1px solid var(--border-light);
+}
+
+
+/* =========================================================
+   7. GENERAL SECTION (HIGHER SECTION SPACING: 60px)
+========================================================= */
+
+.section {
+    padding: 60px 0;
+}
+
+.section:nth-child(even) {
+    background: var(--background-soft);
+}
+
+.section-label {
+    margin-bottom: 10px;
+
+    color: var(--blue);
+
+    font-size: 12px;
+    font-weight: 700;
+
+    letter-spacing: 0.12em;
+}
+
+.section h2 {
+    color: var(--navy);
+
+    font-size: clamp(34px, 5vw, 52px);
+    line-height: 1.1;
+
+    letter-spacing: -0.045em;
+    font-weight: 750;
+}
+
+.section-description {
+    width: min(760px, 100%);
+    margin-top: 16px;
+
+    color: var(--text-secondary);
+
+    font-size: 17px;
+    line-height: 1.85;
+}
+
+
+/* =========================================================
+   8. PROJECT OVERVIEW
+========================================================= */
+
+.project-overview {
+    background: #ffffff;
+}
+
+.project-info {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+
+    margin-top: 36px;
+
+    border-top: 1px solid var(--border);
+    border-bottom: 1px solid var(--border);
+}
+
+.info-item {
+    padding: 22px 24px;
+
+    border-right: 1px solid var(--border);
+}
+
+.info-item:last-child {
+    border-right: none;
+}
+
+.info-item span {
+    display: block;
+
+    margin-bottom: 6px;
+
+    color: var(--text-muted);
+
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+}
+
+.info-item strong {
+    color: var(--navy);
+
+    font-size: 15px;
+    font-weight: 600;
+}
+
+
+/* =========================================================
+   9. GOAL GRID
+========================================================= */
+
+.goal-list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+
+    margin-top: 36px;
+
+    gap: 16px;
+}
+
+.goal-item {
+    padding: 24px;
+
+    border: 1px solid var(--border);
+    border-radius: var(--radius-md);
+
+    background: #ffffff;
+
+    box-shadow: var(--shadow-sm);
+
+    transition:
+        transform 0.25s ease,
+        box-shadow 0.25s ease;
+}
+
+.goal-item:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-md);
+}
+
+.goal-item h3 {
+    margin-bottom: 16px;
+
+    color: var(--blue);
+
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.goal-item p {
+    color: var(--text-secondary);
+
+    font-size: 14px;
+    line-height: 1.7;
+}
+
+
+/* =========================================================
+   10. UX PROCESS
+========================================================= */
+
+.ux-process {
+    background: var(--background-soft);
+}
+
+.process-block {
+    margin-top: 40px;
+}
+
+.process-block h3 {
+    color: var(--navy);
+
+    font-size: 25px;
+    font-weight: 700;
+
+    letter-spacing: -0.02em;
+}
+
+.process-block>p {
+    width: min(720px, 100%);
+
+    margin-top: 10px;
+
+    color: var(--text-secondary);
+
+    font-size: 15px;
+    line-height: 1.8;
+}
+
+
+/* =========================================================
+   11. USER FLOW
+========================================================= */
+
+.user-flow {
+    margin-top: 24px;
+    padding: 24px;
+
+    border: 1px solid var(--border);
+    border-radius: var(--radius-md);
+
+    background: #ffffff;
+
+    box-shadow: var(--shadow-sm);
+}
+
+.user-flow-image {
+    width: 100%;
+    margin-top: 24px;
+    display: flex;
+    justify-content: center;
+}
+
+.user-flow-image img {
+    width: 100%;
+    max-width: 1400px;
+    height: auto;
+    display: block;
+    border-radius: 16px;
+}
+
+
+/* =========================================================
+   12. INFORMATION ARCHITECTURE
+========================================================= */
+
+.ia-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 12px;
+
+    margin-top: 22px;
+}
+
+.ia-list div {
+    padding: 16px 20px;
+
+    border: 1px solid var(--border);
+    border-radius: 10px;
+
+    background: #ffffff;
+
+    color: var(--navy);
+
+    font-size: 14px;
+    font-weight: 600;
+
+    box-shadow: var(--shadow-sm);
+}
+
+
+/* =========================================================
+   13. WIREFRAMES
+========================================================= */
+
+.wireframe-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 24px;
+
+    margin-top: 24px;
+}
+
+.wireframe-item {
+    overflow: hidden;
+
+    padding: 10px;
+
+    border: 1px solid var(--border);
+    border-radius: var(--radius-md);
+
+    background: #ffffff;
+
+    box-shadow: var(--shadow-sm);
+}
+
+.wireframe-item img {
+    width: 100%;
+
+    border-radius: 8px;
+
+    background: #f3f4f6;
+}
+
+
+/* =========================================================
+   14. UI DESIGN
+========================================================= */
+
+.ui-design {
+    background: transparent;
+}
+
+.design-system {
+    margin-top: 40px;
+}
+
+.design-system h3,
+.ui-module h3 {
+    color: var(--navy);
+    font-size: 26px;
+    font-weight: 700;
+    letter-spacing: -0.025em;
+}
+
+.design-system-grid {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 16px;
+    margin-top: 22px;
+}
+
+.system-item {
+    min-width: 0;
+    padding: 22px;
+    border: 1px solid var(--border);
+    border-radius: var(--radius-md);
+    background: var(--background-soft);
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.system-item:hover {
+    transform: translateY(-3px);
+    box-shadow: var(--shadow-sm);
+}
+
+.system-item h4 {
+    margin-bottom: 6px;
+    color: var(--text-muted);
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+}
+
+.system-item p {
+    color: var(--navy);
+    font-size: 15px;
+    font-weight: 600;
+}
+
+
+/* =========================================================
+   15. UI MODULES
+========================================================= */
+
+.ui-module {
+    margin-top: 45px;
+}
+
+.ui-module h3 {
+    margin-bottom: 20px;
+}
+
+
+/* =========================================================
+   16. BROWSER MOCKUP
+========================================================= */
+
+.browser-mockup {
+    width: 100%;
+    min-width: 0;
+    overflow: hidden;
+    border: 1px solid var(--border);
+    border-radius: var(--radius-lg);
+    background: #ffffff;
+    box-shadow: var(--shadow-lg);
+}
+
+.browser-bar {
+    height: 38px;
+    box-sizing: border-box;
+    display: flex;
+    flex-shrink: 0;
+    align-items: center;
+    gap: 7px;
+    padding: 0 14px;
+    background: #f8fafc;
+    border-bottom: 1px solid var(--border);
+}
+
+.browser-bar span {
+    display: block;
+    width: 8px;
+    height: 8px;
+    flex: 0 0 8px;
+    border-radius: 50%;
+    background: #d1d5db;
+}
+
+.browser-mockup img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+
+/* =========================================================
+   17. SCREEN GRID
+========================================================= */
+
+.screen-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    align-items: start;
+    gap: 24px;
+}
+
+.screen-grid .browser-mockup {
+    width: 100%;
+    min-width: 0;
+}
+
+.screen-grid .browser-mockup img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+
+/* =========================================================
+   18. PROTOTYPE
+========================================================= */
+
+.prototype {
+    background: #ffffff;
+}
+
+.prototype-preview {
+    overflow: hidden;
+
+    margin-top: 32px;
+
+    padding: 12px;
+
+    border: 1px solid var(--border);
+    border-radius: var(--radius-lg);
+
+    background: #ffffff;
+
+    box-shadow: var(--shadow-lg);
+}
+
+.prototype-preview img {
+    width: 100%;
+
+    border-radius: 12px;
+}
+
+.prototype .btn {
+    margin-top: 22px;
+}
+
+
+/* =========================================================
+   19. LEARNINGS
+========================================================= */
+
+.learnings {
+    background: var(--background-soft);
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.learning-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 18px;
+
+    margin-top: 36px;
+}
+
+.learning-item {
+    padding: 24px;
+
+    border: 1px solid var(--border);
+    border-radius: var(--radius-md);
+
+    background: #ffffff;
+
+    box-shadow: var(--shadow-sm);
+}
+
+.learning-item h3 {
+    color: var(--navy);
+
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.learning-item p {
+    margin-top: 8px;
+
+    color: var(--text-secondary);
+
+    font-size: 14px;
+    line-height: 1.8;
+}
+
+
+/* =========================================================
+   20. FOOTER
+========================================================= */
+
+.footer {
+    padding: 50px 0;
+
+    background: var(--navy);
+
+    color: #ffffff;
+}
+
+.footer h2 {
+    font-size: 25px;
+    font-weight: 700;
+}
+
+.footer p {
+    margin-top: 6px;
+
+    color: #cbd5e1;
+
+    font-size: 14px;
+}
+
+.footer a {
+    display: inline-block;
+
+    margin-top: 14px;
+
+    color: #93c5fd;
+
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.footer a:hover {
+    color: #ffffff;
+}
